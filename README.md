@@ -65,6 +65,8 @@ Adds a default entry under `config/displays.php` → `windowed.glfw`:
 
 The command is **hidden** when `config('displays.windowed.glfw')` already exists. Pass `--force` to overwrite that block.
 
+When finished, it asks whether to run `config:main-display` and pre-selects `glfw`.
+
 ## Point `main` at the window (optional)
 
 To make GLFW the primary display:
