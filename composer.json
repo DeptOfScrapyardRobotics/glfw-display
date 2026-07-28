@@ -1,0 +1,51 @@
+{
+    "name": "dept-of-scrapyard-robotics/glfw-display",
+    "description": "Drive GLFW-powered Windows with PHP",
+    "license": "MIT",
+    "homepage": "https://scrapyard-io.projectsaturnstudios.com",
+    "version": "0.6.0",
+    "authors": [
+        {
+            "name": "Angel Gonzalez",
+            "email": "angel@projectsaturnstudios.com"
+        }
+    ],
+    "require": {
+        "php": "^8.3",
+        "ext-glfw": "^0.5.0",
+        "microscrap/glfw-gfx": "^0.6.0",
+        "fabricate/displays": "^0.6.0",
+        "fabricate/contracts": "^0.6.0",
+        "fabricate/nuts-and-bolts": "^0.6.0"
+    },
+    "require-dev": {
+        "pestphp/pest": "^4"
+    },
+    "autoload": {
+        "psr-4": {
+            "DeptOfScrapyardRobotics\\Displays\\GLFW\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "DeptOfScrapyardRobotics\\Tests\\": "tests/"
+        }
+    },
+    "config": {
+        "sort-packages": true,
+        "allow-plugins": {
+            "pestphp/pest-plugin": true
+        }
+    },
+    "minimum-stability": "dev",
+    "extra": {
+        "branch-alias": {
+            "dev-master": "0.6.x-dev"
+        },
+        "scrapyard-io": {
+            "providers": [
+                "DeptOfScrapyardRobotics\\Displays\\GLFW\\Providers\\GLFWDisplayServiceProvider"
+            ]
+        }
+    }
+}
